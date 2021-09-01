@@ -69,7 +69,7 @@ h1,h2 {
 /* select multiple classes */
 ```
 
-## 4. Class selector
+## 5. Class selector
 ```
 <h1 class="title">Class selecort</h1>
 
@@ -78,7 +78,7 @@ h1,h2 {
 }
 ```
 
-## 5. Descendent selector
+## 6. Descendent selector
 Select all <p>'s that are nested inside an <div> 
 ```
 <div>
@@ -91,7 +91,7 @@ div p {
 }
 ```
 
-## 6. Adjacent selector
+## 7. Adjacent selector
 Select only the one element that is immediately preceded by another element
 ```
 <ul>
@@ -107,7 +107,7 @@ li:first-of-type + li {
 
 ```
 
-## 7. Direct child selector
+## 8. Direct child selector
 Select only the <li>'s that are direct children of a <div> element
 ```
 <div>
@@ -122,7 +122,7 @@ color: white;
 /* One with li tag will be set the color */
 ```
 
-## 8. Attribute selector
+## 9. Attribute selector
 Select all input elements where the type attribute is set to "text"
 ```
 <input type="passsword" placeholder="password">
@@ -134,7 +134,7 @@ input[type="text"] {
 
 ```
 
-## 9. Pseudo-elements
+## 10. Pseudo-elements
 This is the method of styling the specific element
 ```
 <p>This is a paragraph</p>
@@ -145,7 +145,7 @@ p::first-letter{
 /* "T" which is the first letter with p tag will be changed the color */
 ```
 
-## 10. Pseudo-classes
+## 11. Pseudo-classes
 Select all input elements where the type attribute is set to "text"
 ```
 <button>
