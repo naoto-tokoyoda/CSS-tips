@@ -16,7 +16,7 @@ In this case below, it shows all pink in HTML
 * {
     background-color:pink;
 }
-# In this case above, it shows all pink in HTML
+/* In this case above, it shows all pink in HTML */
 ```
 
 ## 2. ID selector
@@ -37,7 +37,7 @@ This selects all elements in HTML
 h1 {
     border:1px solid red;
 }
-# All h1 tag has a border with 1px, solid and red.
+/* All h1 tag has a border with 1px, solid and red. */
 
 <img src="image1.png" alt="image1">
 
@@ -45,7 +45,7 @@ img {
     width:500px;
     height:500px;
 }
-# All image has 500px of width and 500px pf height
+/* All image has 500px of width and 500px of height */
 ```
 
 ## 4. Multiple selectors
@@ -57,7 +57,7 @@ This selects more than one elements
 h1,h2 {
     color:green;
 }
-# All h1 and h2 are set to green color
+/* All h1 and h2 are set to green color */
 
 <p class="class1">Same width and height</p>
 <p class="class2">Same width and height</p>
@@ -66,7 +66,7 @@ h1,h2 {
     width:100px;
     height:100px;
 }
-# select multiple classes
+/* select multiple classes */
 ```
 
 ## 4. Class selector
@@ -103,7 +103,8 @@ Select only the one element that is immediately preceded by another element
 li:first-of-type + li {
     color: red;
 }
-# this means that only two with li tag will be set the style
+/* this means that only two with li tag will be set the style */
+
 ```
 
 ## 7. Direct child selector
@@ -118,7 +119,7 @@ Select only the <li>'s that are direct children of a <div> element
 div > li {
 color: white;
 }
-# One with li tag will be set the color
+/* One with li tag will be set the color */
 ```
 
 ## 8. Attribute selector
@@ -141,10 +142,10 @@ This is the method of styling the specific element
 p::first-letter{
     color:white;
 }
-# "T" which is the first letter with p tag will be changed the color
+/* "T" which is the first letter with p tag will be changed the color */
 ```
 
-## Pseudo-classes
+## 10. Pseudo-classes
 Select all input elements where the type attribute is set to "text"
 ```
 <button>
@@ -154,13 +155,13 @@ Select all input elements where the type attribute is set to "text"
 button a:hover {
     color:blue;
 }
-# Color on the button will be changed when the mouse pointer over it
+/* Color on the button will be changed when the mouse pointer over it */
 ```
-# There are many pseudo-classes. You can check this website: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+There are many pseudo-classes. You can check this website: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
 
-## Conflicting among selectors (Specificity)
-# What happens when p elements are declared at the same time?
+# Conflicting among selectors (Specificity)
+What happens when p elements are declared at the same time?
 ```
 p {
     color: red;
@@ -172,24 +173,24 @@ p {
 ```
 p element is blue. The program will be read step by step, and the last code is color is blue.
 
-## So what is the specificity?
+## What is the specificity?
 This means applying styles depends on how much you specify with the selector type.
 For example here.
 ```
 h1 {
     color: red;
 }
-# one element selector  
+/* one element selector  */ 
 
 div h1 {
     color: blue;
 }
-# two element selectors 
+/*two element selectors */ 
 ```
 So, the h1 tag is blue, because it is more specific.
 
-## What is the formula of secificity in CSS?
-# ID > CLASS > ELEMENT
+# What is the formula of specificity in CSS?
+ID > CLASS > ELEMENT
 
 More details:
 ID selectors > Class, Attribute, and pseudo class selectors > Element and pseudo element selectors.
@@ -198,7 +199,7 @@ ID selectors > Class, Attribute, and pseudo class selectors > Element and pseudo
  div h1 {
     color: blue;
 }
-# 0 > 0 > 2
-# Because there have two elements
+/* 0 > 0 > 2 */
+/* Because there have two elements */
 ```
 This will help your understandings: [Specificity calculator](https://specificity.keegan.st/)
