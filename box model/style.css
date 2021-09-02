@@ -1,0 +1,41 @@
+/* width and height */
+
+.width-height{
+    border: 1px solid black;
+}
+
+.width-height p{
+    width:500px;
+    height:500px;
+    border: 1px solid black;
+}
+
+/* border and radius */
+
+.border-and-radius .text {
+    width:300px;
+    height:auto;
+}
+
+.border-and-radius .one {
+    border-width:10px;
+    border-color:blue;
+    border-style:solid;
+    box-sizing: border-box;
+}
+
+.border-and-radius .two {
+    background-color:skyblue;
+}
+
+.border-and-radius .three {
+    border-radius: 60%;
+    background-color:lightgreen;
+
+}
+
+
+
+
+
+
