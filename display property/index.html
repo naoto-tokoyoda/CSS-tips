@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Display property</title>
+</head>
+<body>
+    <h1>Display property</h1>
+    <h2>What is the display?</h2>
+    <p>
+        This is one of the property, briefly saying, it is to decide the element display format <br>
+        There are block, inline, inline-block and none.
+    </p>
+    <div class="display-property">
+        <div class="box">
+            <h2>What is Block?</h2>
+            <p>
+                Block elements break the flow of a document. Width, height, margin and padding are respected
+                p,div,ul, and h1 to h6 are default settings by block.
+            </p>
+
+            <h2>1. Elements line up vertically</h2>
+            <div class="block-example">
+                <p class="block1">this is block1</p>
+                <p class="block2">this is block2</p>
+            </div>
+            <p>As we can see, p tags are lined up vertically.</p>
+
+            <br>
+            <br>
+
+            <h2>2. Width and height can be specified</h2>
+            <div class="block-example">
+                <p class="block3">this is block3</p>
+            </div>
+
+            <br>
+            <br>
+
+            <h2>3. Margin and padding also can be specified</h2>
+            <div class="block-example">
+                <p class="block4">this is block4</p>
+            </div>
+
+            <br>
+            <br>
+
+            <h2>4. Text-align and vertical-align cannot be specified</h2>
+            <div class="block-example">
+                <p class="block5">this is block5</p>
+            </div>
+            <p>
+                Only text in the element is centered <br>
+                If you want to make block element centered, you can add margin right and left<br>
+                margin:auto auto;
+            </p>
+
+        </div>
+
+        <div class="box">
+            <h2>What is the inline</h2>
+            <p>
+                Width and height are ignored. Margin and padding puch elements away HORIZONTALLY but not VERTICLLY
+                a,span and image tag are default settings by inline.
+            </p>
+
+            <br>
+            <br>
+
+            <h2>1. Mainly used as part of the text</h2>
+            <p>For example, it is used for elements such as text decorations and links.</p>
+            
+            <br>
+            <br>
+
+            <h2>2. Lined up side by side with no line breaks between elements</h2>
+            <p>As with the text, when you reach the right end, a line break will occur.</p>
+
+            <div class="inline-example">
+                <p>This is <a href="www.google.com">a tag</a> and <span>span tag</span>.</p>
+            </div>
+            
+
+
+        </div>
+        
+        <div class="box">
+            <h2>What is the inline-block</h2>
+            <p>
+                Behave like an inline element except width, height, margin and padding are respected
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

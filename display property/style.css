@@ -1,0 +1,35 @@
+.block-example .block1{
+    background-color: orange;
+}
+
+.block-example .block2{
+    background-color:skyblue;
+}
+
+.block-example .block3{
+    width:200px;
+    height: 200px;
+    background-color:orange;
+}
+
+.block-example .block4{
+    margin:100px;
+    padding:100px;
+    background-color:orange;
+}
+
+.block-example .block5{
+    width: 80px;
+    text-align:center;
+    /* margin:auto auto; */
+    background-color:orange;
+}
+
+.inline-example p a{
+    background-color:skyblue;
+    color:white;
+}
+
+.inline-example p span{
+    background-color:orange;
+}
