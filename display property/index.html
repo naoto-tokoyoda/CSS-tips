@@ -22,7 +22,7 @@
                 p,div,ul, and h1 to h6 are default settings by block.
             </p>
 
-            <h2>1. Elements line up vertically</h2>
+            <h3>1. Elements line up vertically</h3>
             <div class="block-example">
                 <p class="block1">this is block1</p>
                 <p class="block2">this is block2</p>
@@ -32,7 +32,7 @@
             <br>
             <br>
 
-            <h2>2. Width and height can be specified</h2>
+            <h3>2. Width and height can be specified</h3>
             <div class="block-example">
                 <p class="block3">this is block3</p>
             </div>
@@ -40,7 +40,7 @@
             <br>
             <br>
 
-            <h2>3. Margin and padding also can be specified</h2>
+            <h3>3. Margin and padding also can be specified</h3>
             <div class="block-example">
                 <p class="block4">this is block4</p>
             </div>
@@ -48,7 +48,7 @@
             <br>
             <br>
 
-            <h2>4. Text-align and vertical-align cannot be specified</h2>
+            <h3>4. Text-align and vertical-align cannot be specified</h3>
             <div class="block-example">
                 <p class="block5">this is block5</p>
             </div>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="box">
-            <h2>What is the inline</h2>
+            <h3>What is the inline</h3>
             <p>
                 Width and height are ignored. Margin and padding puch elements away HORIZONTALLY but not VERTICLLY
                 a,span and image tag are default settings by inline.
@@ -70,29 +70,142 @@
             <br>
             <br>
 
-            <h2>1. Mainly used as part of the text</h2>
+            <h3>1. Mainly used as part of the text</h3>
             <p>For example, it is used for elements such as text decorations and links.</p>
             
             <br>
             <br>
 
-            <h2>2. Lined up side by side with no line breaks between elements</h2>
+            <h3>2. Lined up side by side with no line breaks between elements</h3>
             <p>As with the text, when you reach the right end, a line break will occur.</p>
 
-            <div class="inline-example">
+            <div class="inline-example1">
                 <p>This is <a href="www.google.com">a tag</a> and <span>span tag</span>.</p>
             </div>
+            <p>In this way, before and after the inline element, there are no line breaks and they are lined up side by side.</p>
+
+            <br>
+            <br>
+
+            <h3>3. Basically used in block element</h3>
+            <p>On the contrary, it is rare to put a block in the inline.</p>
             
+            <br>
+            <br>
 
+            <h3>4. Cannot specify width and height</h3>
+            <p>You cannot specify the width and height of the inline element with CSS. The width and height of the inline element depends on the "contents of the element". In other words, the width and height are automatically determined by the "text length" and "letter size".</p>
+            <p>Let's try adjusting the width and height of the span tag whose initial value is inline using example below</p>
+            <div class="inline-example2">
+                <p>This is example for <span>inline element</span></p>
+            </div>
+            <p>I set width is 500px and height is 500px.</p>
+            <p>If you use CSS to specify the width and height of an inline element like this, the size of the element will not change in the slightest.</p>
 
+            <br>
+            <br>
+
+            <h3>5. Basically used in block element</h3>
+            <p>On the contrary, it is rare to put a block in the inline.</p>
+            
+            <br>
+            <br>
+
+            <h3>6. Can't adjust the top and bottom margins</h3>
+            <p>In inline element, the left and right margins which are padding and margin can be freely specified.</p>
+            <p>However, you cannot specify the top and bottom margins. Also, although you can specify the top and bottom padding, if you increase the padding, it will overlap with the previous and next lines when a line break occurs, and the design will collapse.</p>
+            <p>So the most important here is you can specify only the right and left margin as the inline element.</p>
+            <div class="inline-example3">
+                <p>This paragraph is set <span>margin 50px</span> using span tag.</p>
+                <br>
+                <p>This paragraph is set <span>padding 30px</span> using span tag.</p>
+            </div>
+            <p>The horizontal padding and margin are properly specified. On the other hand, the top and bottom margins are invalid. Although the top and bottom padding is reflected, it overlaps with the previous line, resulting in a chaotic situation.</p>
         </div>
         
         <div class="box">
             <h2>What is the inline-block</h2>
             <p>
                 Behave like an inline element except width, height, margin and padding are respected
+                This is something in between inline and block. Roughly speaking, the order of the elements is inline, and the contents of the elements are block-like in nature.
             </p>
+
+            <br>
+            <br>
+
+            <h3>1. Width and height can be specified</h3>
+            <p>The width and height can be freely specified in the same way as block.</p>
+
+            <br>
+            <br>
+
+            <h3>2. You can also specify the top, bottom, left, and right margins</h3>
+            <p>The margins are the same as block, and you can freely specify the margin and padding values.</p>
+
+            <br>
+            <br>
+
+            <h3>3. Can also specify text-align and vertical-align</h3>
+            <p>With inline-block, you can also specify "text-align" and "vertical-align". It's kind of a nice combination, isn't it?</p>
+            
+            <table>
+                <tr>
+                  <th>Display</th>
+                  <th>Block</th>
+                  <th>inline</th>
+                  <th>inline-block</th>
+                </tr>
+                <tr>
+                  <td>text-align</td>
+                  <td>Cannot specify</td>
+                  <td>Can specify</td>
+                  <td>Can specify</td>
+                </tr>
+                <tr>
+                  <td>vertical-align</td>
+                  <td>Cannot specify</td>
+                  <td>Can specify</td>
+                  <td>Can specify</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <h3>4. Where we can use it?</h3>
+            <p>
+                Basically, a web page consists of display:block and display:inline elements.
+                it is useful when you want to arrange elements in a row horizontally.
+            </p>
+            <h3>For example here</h3>
+            <div id="inline-element-example">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
         </div>
+
+        <br>
+        <br>
+
+        <div class="box">
+            <h2>What is display:none?</h2>
+            <p>
+                Elements with this value will be hidden in the browser.
+            </p>
+            <h3>For example here</h3>
+            <div id="none-element-example">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <p>There is no about "About" between Home and Contact us</p>
+        </div>
+            
     </div>
     
 </body>
